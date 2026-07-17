@@ -1,0 +1,27 @@
+{
+  "SUBMITTED by EMPLOYEE": {
+    "tool": "submit_request",
+    "confidence": 1.0,
+    "reason": "Directly matches submission action."
+  },
+  "APPROVED by ADMINISTRATION": {
+    "tool": "check_administration",
+    "confidence": 1.0,
+    "reason": "Checks admin rules for approval."
+  },
+  "FINAL_APPROVED by SUPERVISOR": {
+    "tool": "request_supervisor_approval",
+    "confidence": 1.0,
+    "reason": "Routes request for final approval."
+  },
+  "Pay": {
+    "tool": "execute_payment",
+    "confidence": 1.0,
+    "reason": "Executes the payment transfer."
+  },
+  "Payment Handled": {
+    "tool": "confirm_payment_handled",
+    "confidence": 1.0,
+    "reason": "Confirms payment processing completion."
+  }
+}

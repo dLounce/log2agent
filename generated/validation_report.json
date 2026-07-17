@@ -1,0 +1,20 @@
+{
+ "agreement_pct": 100.0,
+ "n_cases_validated": 50,
+ "model_fitness": 1.0,
+ "model_precision": 0.2866,
+ "current_median_cycle_days": 7.1,
+ "median_routing_wait_per_handoff_hrs": 29.3,
+ "projected_routing_time_saved_hrs": 171.4,
+ "projected_routing_time_saved_days": 7.1,
+ "value_framing": "Agent removes hand-off/queue delay between steps; humans retain judgment at all financial gates. Savings = coordination latency, not decision time.",
+ "automatable_steps": [
+  "SUBMITTED by EMPLOYEE",
+  "APPROVED by ADMINISTRATION"
+ ],
+ "hitl_gated_steps": [
+  "FINAL_APPROVED by SUPERVISOR",
+  "Pay",
+  "Payment Handled"
+ ]
+}

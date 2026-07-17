@@ -1,0 +1,32 @@
+{
+  "A_Accepted": {
+    "tool": "notify_employee",
+    "confidence": 0.8,
+    "reason": "Notifying acceptance to the employee."
+  },
+  "A_Cancelled": {
+    "tool": "notify_employee",
+    "confidence": 0.7,
+    "reason": "Notifying cancellation to the employee."
+  },
+  "A_Complete": {
+    "tool": "confirm_payment_handled",
+    "confidence": 0.9,
+    "reason": "Confirming completion of payment process."
+  },
+  "A_Concept": {
+    "tool": null,
+    "confidence": 0.0,
+    "reason": "No tool fits this activity."
+  },
+  "A_Create Application": {
+    "tool": "submit_request",
+    "confidence": 0.85,
+    "reason": "Submitting a new application request."
+  },
+  "A_Denied": {
+    "tool": "notify_employee",
+    "confidence": 0.8,
+    "reason": "Notifying denial to the employee."
+  }
+}

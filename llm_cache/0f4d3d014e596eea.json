@@ -1,0 +1,132 @@
+{
+  "A_Accepted": {
+    "category": "deterministic",
+    "reason": "based on application criteria",
+    "automatable": 1.0
+  },
+  "A_Cancelled": {
+    "category": "deterministic",
+    "reason": "based on user action",
+    "automatable": 1.0
+  },
+  "A_Complete": {
+    "category": "deterministic",
+    "reason": "status update",
+    "automatable": 1.0
+  },
+  "A_Concept": {
+    "category": "deterministic",
+    "reason": "initial application stage",
+    "automatable": 1.0
+  },
+  "A_Create Application": {
+    "category": "deterministic",
+    "reason": "form filling process",
+    "automatable": 1.0
+  },
+  "A_Denied": {
+    "category": "deterministic",
+    "reason": "based on application criteria",
+    "automatable": 1.0
+  },
+  "A_Incomplete": {
+    "category": "deterministic",
+    "reason": "status update",
+    "automatable": 1.0
+  },
+  "A_Pending": {
+    "category": "deterministic",
+    "reason": "waiting for further action",
+    "automatable": 1.0
+  },
+  "A_Submitted": {
+    "category": "deterministic",
+    "reason": "status update",
+    "automatable": 1.0
+  },
+  "A_Validating": {
+    "category": "deterministic",
+    "reason": "checking application details",
+    "automatable": 1.0
+  },
+  "O_Accepted": {
+    "category": "deterministic",
+    "reason": "based on offer criteria",
+    "automatable": 1.0
+  },
+  "O_Cancelled": {
+    "category": "deterministic",
+    "reason": "based on user action",
+    "automatable": 1.0
+  },
+  "O_Create Offer": {
+    "category": "deterministic",
+    "reason": "automated offer generation",
+    "automatable": 1.0
+  },
+  "O_Created": {
+    "category": "deterministic",
+    "reason": "status update",
+    "automatable": 1.0
+  },
+  "O_Refused": {
+    "category": "deterministic",
+    "reason": "based on offer criteria",
+    "automatable": 1.0
+  },
+  "O_Returned": {
+    "category": "deterministic",
+    "reason": "status update",
+    "automatable": 1.0
+  },
+  "O_Sent (mail and online)": {
+    "category": "deterministic",
+    "reason": "automated communication",
+    "automatable": 1.0
+  },
+  "O_Sent (online only)": {
+    "category": "deterministic",
+    "reason": "automated communication",
+    "automatable": 1.0
+  },
+  "W_Assess potential fraud": {
+    "category": "judgment",
+    "reason": "requires human evaluation",
+    "automatable": 0.5
+  },
+  "W_Call after offers": {
+    "category": "communication",
+    "reason": "notifying customer",
+    "automatable": 0.2
+  },
+  "W_Call incomplete files": {
+    "category": "communication",
+    "reason": "requesting information",
+    "automatable": 0.2
+  },
+  "W_Complete application": {
+    "category": "deterministic",
+    "reason": "finalizing application",
+    "automatable": 1.0
+  },
+  "W_Handle leads": {
+    "category": "judgment",
+    "reason": "requires human interaction",
+    "automatable": 0.4
+  },
+  "W_Personal Loan collection": {
+    "category": "judgment",
+    "reason": "requires human decision",
+    "automatable": 0.3
+  },
+  "W_Shortened completion": {
+    "category": "deterministic",
+    "reason": "process optimization",
+    "automatable": 1.0
+  },
+  "W_Validate application": {
+    "category": "judgment",
+    "reason": "requires human evaluation",
+    "automatable": 0.5
+  }
+}

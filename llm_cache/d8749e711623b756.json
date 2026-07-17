@@ -1,0 +1,37 @@
+{
+  "n0_submitted_by_employee": {
+    "logic": "result = 'submitted' if state['status'] == 'pending' else 'not submitted'",
+    "stub": {
+      "status": "submitted",
+      "message": "The request has been submitted by the employee."
+    }
+  },
+  "n1_approved_by_administration": {
+    "logic": "result = 'approved' if state['requested_amount'] <= 1000 else 'not approved'",
+    "stub": {
+      "status": "approved",
+      "message": "The request has been approved by administration."
+    }
+  },
+  "n2_final_approved_by_supervisor": {
+    "logic": "result = 'final_approved' if state['status'] == 'approved' else 'pending supervisor approval'",
+    "stub": {
+      "status": "final_approved",
+      "message": "The request has been finally approved by the supervisor."
+    }
+  },
+  "n3_pay": {
+    "logic": "result = 'payment initiated' if state['status'] == 'final_approved' else 'payment not initiated'",
+    "stub": {
+      "status": "payment_initiated",
+      "message": "Payment process has been initiated."
+    }
+  },
+  "n4_payment_handled": {
+    "logic": "result = 'payment_completed' if state['status'] == 'payment_initiated' else 'payment not completed'",
+    "stub": {
+      "status": "payment_completed",
+      "message": "The payment has been successfully handled."
+    }
+  }
+}

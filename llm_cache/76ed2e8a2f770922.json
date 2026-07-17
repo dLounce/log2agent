@@ -1,0 +1,37 @@
+{
+  "n0_submitted_by_employee": {
+    "logic": "result = {'case_id': state['case_id'], 'requested_amount': state['requested_amount'], 'status': 'submitted', 'history': state['history'] + ['submitted by employee']}",
+    "stub": {
+      "success": true,
+      "message": "Submission successful"
+    }
+  },
+  "n1_approved_by_administration": {
+    "logic": "result = {'case_id': state['case_id'], 'requested_amount': state['requested_amount'], 'status': 'approved', 'history': state['history'] + ['approved by administration']}",
+    "stub": {
+      "success": true,
+      "message": "Approval granted"
+    }
+  },
+  "n2_final_approved_by_supervisor": {
+    "logic": "result = {'case_id': state['case_id'], 'requested_amount': state['requested_amount'], 'status': 'final_approved', 'history': state['history'] + ['final approved by supervisor']}",
+    "stub": {
+      "success": true,
+      "message": "Final approval received"
+    }
+  },
+  "n3_pay": {
+    "logic": "result = {'case_id': state['case_id'], 'requested_amount': state['requested_amount'], 'status': 'payment_requested', 'history': state['history'] + ['payment requested']}",
+    "stub": {
+      "success": true,
+      "message": "Payment notification sent"
+    }
+  },
+  "n4_payment_handled": {
+    "logic": "result = {'case_id': state['case_id'], 'requested_amount': state['requested_amount'], 'status': 'payment_handled', 'history': state['history'] + ['payment handled']}",
+    "stub": {
+      "success": true,
+      "message": "Payment processed successfully"
+    }
+  }
+}

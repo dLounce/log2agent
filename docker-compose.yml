@@ -1,0 +1,12 @@
+services:
+  log2agent:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      # pass your key through from the host .env file
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    volumes:
+      # persist the LLM cache + generated agents across container restarts
+      - ./llm_cache:/app/llm_cache
+      - ./generated:/app/generated

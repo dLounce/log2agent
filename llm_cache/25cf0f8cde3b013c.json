@@ -1,0 +1,61 @@
+{
+  "n0_submitted_by_employee": {
+    "logic": "result = stub()\nresult['status'] = 'submitted'\nresult['history'].append('Submitted by employee')",
+    "stub": {
+      "case_id": "12345",
+      "requested_amount": 1000.0,
+      "status": "pending",
+      "history": []
+    }
+  },
+  "n1_approved_by_administration": {
+    "logic": "result = stub()\nresult['status'] = 'approved'\nresult['history'].append('Approved by administration')",
+    "stub": {
+      "case_id": "12345",
+      "requested_amount": 1000.0,
+      "status": "pending",
+      "history": [
+        "Submitted by employee"
+      ]
+    }
+  },
+  "n2_final_approved_by_supervisor": {
+    "logic": "result = stub()\nresult['status'] = 'final_approved'\nresult['history'].append('Final approved by supervisor')",
+    "stub": {
+      "case_id": "12345",
+      "requested_amount": 1000.0,
+      "status": "approved",
+      "history": [
+        "Submitted by employee",
+        "Approved by administration"
+      ]
+    }
+  },
+  "n3_pay": {
+    "logic": "result = stub()\nresult['status'] = 'payment_requested'\nresult['history'].append('Payment requested')",
+    "stub": {
+      "case_id": "12345",
+      "requested_amount": 1000.0,
+      "status": "final_approved",
+      "history": [
+        "Submitted by employee",
+        "Approved by administration",
+        "Final approved by supervisor"
+      ]
+    }
+  },
+  "n4_payment_handled": {
+    "logic": "result = stub()\nresult['status'] = 'payment_completed'\nresult['history'].append('Payment handled')",
+    "stub": {
+      "case_id": "12345",
+      "requested_amount": 1000.0,
+      "status": "payment_requested",
+      "history": [
+        "Submitted by employee",
+        "Approved by administration",
+        "Final approved by supervisor",
+        "Payment requested"
+      ]
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "n0_submitted_by_employee": {
+    "logic": "result = {'status': 'submitted', 'case_id': state['case_id'], 'requested_amount': state['requested_amount']}",
+    "stub": {
+      "status": "submitted",
+      "case_id": "12345",
+      "requested_amount": 1000
+    }
+  },
+  "n1_approved_by_administration": {
+    "logic": "result = {'status': 'approved', 'case_id': state['case_id']} if state['status'] == 'submitted' else {'status': 'pending', 'case_id': state['case_id']}",
+    "stub": {
+      "status": "approved",
+      "case_id": "12345"
+    }
+  },
+  "n2_final_approved_by_supervisor": {
+    "logic": "result = {'status': 'final_approved', 'case_id': state['case_id']} if state['status'] == 'approved' else {'status': 'pending', 'case_id': state['case_id']}",
+    "stub": {
+      "status": "final_approved",
+      "case_id": "12345"
+    }
+  },
+  "n3_pay": {
+    "logic": "result = {'action': 'pay', 'case_id': state['case_id']} if state['status'] == 'final_approved' else {'action': 'hold', 'case_id': state['case_id']}",
+    "stub": {
+      "action": "pay",
+      "case_id": "12345"
+    }
+  },
+  "n4_payment_handled": {
+    "logic": "result = {'status': 'payment_handled', 'case_id': state['case_id']} if state['action'] == 'pay' else {'status': 'not_processed', 'case_id': state['case_id']}",
+    "stub": {
+      "status": "payment_handled",
+      "case_id": "12345"
+    }
+  }
+}

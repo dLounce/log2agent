@@ -1,0 +1,97 @@
+{
+  "Payment Handled": {
+    "category": "deterministic",
+    "reason": "Automated payment processing",
+    "automatable": 1.0
+  },
+  "Request For Payment APPROVED by ADMINISTRATION": {
+    "category": "judgment",
+    "reason": "Requires administrative approval",
+    "automatable": 0.2
+  },
+  "Request For Payment APPROVED by BUDGET OWNER": {
+    "category": "judgment",
+    "reason": "Requires budget owner's decision",
+    "automatable": 0.2
+  },
+  "Request For Payment APPROVED by PRE_APPROVER": {
+    "category": "judgment",
+    "reason": "Requires pre-approval decision",
+    "automatable": 0.2
+  },
+  "Request For Payment APPROVED by SUPERVISOR": {
+    "category": "judgment",
+    "reason": "Requires supervisor's approval",
+    "automatable": 0.2
+  },
+  "Request For Payment FINAL_APPROVED by BUDGET OWNER": {
+    "category": "judgment",
+    "reason": "Final decision by budget owner",
+    "automatable": 0.1
+  },
+  "Request For Payment FINAL_APPROVED by DIRECTOR": {
+    "category": "judgment",
+    "reason": "Director's final approval needed",
+    "automatable": 0.1
+  },
+  "Request For Payment FINAL_APPROVED by SUPERVISOR": {
+    "category": "judgment",
+    "reason": "Final approval from supervisor",
+    "automatable": 0.1
+  },
+  "Request For Payment FOR_APPROVAL by ADMINISTRATION": {
+    "category": "communication",
+    "reason": "Notifying for approval",
+    "automatable": 0.5
+  },
+  "Request For Payment FOR_APPROVAL by SUPERVISOR": {
+    "category": "communication",
+    "reason": "Notifying supervisor for approval",
+    "automatable": 0.5
+  },
+  "Request For Payment REJECTED by ADMINISTRATION": {
+    "category": "judgment",
+    "reason": "Administrative rejection decision",
+    "automatable": 0.1
+  },
+  "Request For Payment REJECTED by BUDGET OWNER": {
+    "category": "judgment",
+    "reason": "Budget owner's rejection decision",
+    "automatable": 0.1
+  },
+  "Request For Payment REJECTED by EMPLOYEE": {
+    "category": "judgment",
+    "reason": "Employee's rejection decision",
+    "automatable": 0.1
+  },
+  "Request For Payment REJECTED by MISSING": {
+    "category": "judgment",
+    "reason": "Rejection due to missing info",
+    "automatable": 0.1
+  },
+  "Request For Payment REJECTED by PRE_APPROVER": {
+    "category": "judgment",
+    "reason": "Pre-approver's rejection decision",
+    "automatable": 0.1
+  },
+  "Request For Payment REJECTED by SUPERVISOR": {
+    "category": "judgment",
+    "reason": "Supervisor's rejection decision",
+    "automatable": 0.1
+  },
+  "Request For Payment SAVED by EMPLOYEE": {
+    "category": "deterministic",
+    "reason": "Automated saving process",
+    "automatable": 1.0
+  },
+  "Request For Payment SUBMITTED by EMPLOYEE": {
+    "category": "deterministic",
+    "reason": "Automated submission process",
+    "automatable": 1.0
+  },
+  "Request Payment": {
+    "category": "communication",
+    "reason": "Requesting payment action",
+    "automatable": 0.5
+  }
+}
