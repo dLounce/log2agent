@@ -3,7 +3,7 @@
 Mines an enterprise event log to reconstruct how a business process actually runs, ranks each step by automation ROI, generates a LangGraph agent for the best segment (with human approval gates on financial steps), and validates the agent by replaying historical cases through it.
 
 ## Demo
-https://github.com/user-attachments/assets/log2agent-demo.mp4
+https://github.com/user-attachments/assets/599b486b-a64f-4eb9-83b9-0dbd13b81e87
 
 ## Motivation
 
